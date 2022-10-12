@@ -1,6 +1,9 @@
 import PySimpleGUI as sg
 
-layout = [[]]
+layout = [[sg.T("Total de registros existentes:")],
+          [sg.T("1- Socios:"), sg.T("0", key='-SOCIOS-')],
+          [sg.T("2- Planos:"), sg.T("0", key='-PLANOS-')],
+          [sg.T("3- Mensalidades:"), sg.T("0", key='-MENSALIDADES-')]]
 window = sg.Window("Temp-Name", layout, finalize=True)
 
 popup_layout = [[sg.T("Temp-Name")],
